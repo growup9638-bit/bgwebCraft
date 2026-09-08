@@ -1,0 +1,896 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TruDerm by Dr. Nidhi Rana | Best Dermatologist in Bhopal</title>
+<meta name="description" content="TruDerm Skin Clinic by Dr. Nidhi Rana – MBBS, MD (DVL), Consultant Dermatologist, Cosmetologist & Laser Surgeon in Bhopal. Acne, pigmentation, laser hair removal, chemical peel & more.">
+<meta name="keywords" content="Dermatologist in Bhopal, TruDerm, Dr Nidhi Rana, Skin Clinic Bhopal, Laser Treatment Bhopal, Acne Treatment, Pigmentation, Hair Fall">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://example.com/">
+<meta property="og:title" content="TruDerm by Dr. Nidhi Rana | Dermatologist in Bhopal">
+<meta property="og:description" content="Professional dermatology, laser & aesthetic care in Bhopal.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #f7fbfc;
+  --bg-elevated: #ffffff;
+  --text: #0f2a3a;
+  --text-muted: #5a7380;
+  --primary: #0d7c82;
+  --primary-dark: #0a6267;
+  --primary-soft: #e6f5f5;
+  --accent: #d4a017;
+  --border: #e2eef1;
+  --shadow: 0 20px 50px rgba(13, 70, 80, 0.08);
+  --radius: 20px;
+  --header-bg: rgba(255,255,255,0.92);
+}
+
+[data-theme="dark"] {
+  --bg: #0b1419;
+  --bg-elevated: #132028;
+  --text: #e8f2f5;
+  --text-muted: #8aa0ab;
+  --primary: #2ec4c9;
+  --primary-dark: #1fa8ad;
+  --primary-soft: #14353a;
+  --accent: #e6b422;
+  --border: #1e333c;
+  --shadow: 0 20px 50px rgba(0,0,0,0.35);
+  --header-bg: rgba(11,20,25,0.92);
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: 'Inter', system-ui, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.65;
+  transition: background 0.3s, color 0.3s;
+}
+a { text-decoration: none; color: inherit; }
+img { max-width: 100%; display: block; }
+.container { width: min(1140px, 92%); margin: 0 auto; }
+
+/* Header */
+header {
+  position: sticky; top: 0; z-index: 100;
+  background: var(--header-bg);
+  backdrop-filter: blur(14px);
+  border-bottom: 1px solid var(--border);
+  transition: background 0.3s, border 0.3s;
+}
+.nav {
+  height: 76px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-weight: 800;
+  font-size: 18px;
+  color: var(--primary);
+}
+.logo img {
+  width: 42px; height: 42px;
+  object-fit: contain;
+}
+.logo span {
+  display: block;
+  font-size: 11px;
+  color: var(--text-muted);
+  font-weight: 600;
+  letter-spacing: 0.4px;
+}
+nav {
+  display: flex;
+  gap: 28px;
+  font-size: 14px;
+  font-weight: 600;
+}
+nav a { color: var(--text-muted); transition: color 0.2s; }
+nav a:hover { color: var(--primary); }
+
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.theme-btn {
+  width: 42px; height: 42px;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  background: var(--bg-elevated);
+  color: var(--text);
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+  font-size: 18px;
+  transition: all 0.2s;
+}
+.theme-btn:hover { border-color: var(--primary); color: var(--primary); }
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px 20px;
+  border-radius: 12px;
+  font-weight: 700;
+  font-size: 14px;
+  border: 0;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.btn-primary {
+  background: var(--primary);
+  color: #fff;
+  box-shadow: 0 8px 24px rgba(13,124,130,0.25);
+}
+.btn-primary:hover { background: var(--primary-dark); transform: translateY(-1px); }
+.btn-outline {
+  background: transparent;
+  color: var(--primary);
+  border: 1.5px solid var(--primary);
+}
+.btn-outline:hover { background: var(--primary-soft); }
+.btn-light {
+  background: var(--bg-elevated);
+  color: var(--primary);
+  border: 1px solid var(--border);
+}
+
+/* Hero */
+.hero {
+  padding: 70px 0 60px;
+  background: linear-gradient(160deg, var(--primary-soft) 0%, var(--bg) 55%);
+}
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  gap: 50px;
+  align-items: center;
+}
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--primary-soft);
+  color: var(--primary);
+  padding: 7px 14px;
+  border-radius: 30px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  margin-bottom: 18px;
+}
+h1 {
+  font-size: clamp(34px, 4.8vw, 52px);
+  line-height: 1.12;
+  letter-spacing: -1.5px;
+  margin-bottom: 16px;
+  font-weight: 800;
+}
+.hero p {
+  font-size: 17px;
+  color: var(--text-muted);
+  max-width: 520px;
+  margin-bottom: 28px;
+}
+.actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 28px;
+}
+.rating {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  color: var(--text-muted);
+}
+.stars { color: #f5aa27; font-size: 17px; letter-spacing: 1px; }
+
+.hero-card {
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+  border-radius: 28px;
+  padding: 12px;
+  box-shadow: var(--shadow);
+  overflow: hidden;
+}
+.hero-photo {
+  height: 400px;
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+}
+.hero-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+}
+.stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-top: 12px;
+}
+.stat {
+  padding: 14px 8px;
+  background: var(--primary-soft);
+  border-radius: 14px;
+  text-align: center;
+}
+.stat b {
+  display: block;
+  font-size: 20px;
+  color: var(--primary);
+  font-weight: 800;
+}
+.stat span {
+  font-size: 11px;
+  color: var(--text-muted);
+  font-weight: 500;
+}
+
+/* Sections */
+section { padding: 80px 0; }
+.section-head {
+  text-align: center;
+  max-width: 680px;
+  margin: 0 auto 48px;
+}
+.eyebrow {
+  color: var(--primary);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.6px;
+  font-size: 12px;
+}
+.section-head h2 {
+  font-size: clamp(28px, 3.5vw, 38px);
+  line-height: 1.2;
+  margin: 10px 0 12px;
+  font-weight: 800;
+}
+.section-head p { color: var(--text-muted); font-size: 16px; }
+
+/* Services */
+.services {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.service {
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 28px 24px;
+  transition: all 0.25s;
+}
+.service:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow);
+  border-color: var(--primary);
+}
+.service .icon {
+  width: 52px; height: 52px;
+  border-radius: 14px;
+  background: var(--primary-soft);
+  display: grid;
+  place-items: center;
+  font-size: 24px;
+  margin-bottom: 18px;
+}
+.service h3 {
+  font-size: 17px;
+  margin-bottom: 8px;
+  font-weight: 700;
+}
+.service p {
+  color: var(--text-muted);
+  font-size: 14px;
+  line-height: 1.55;
+}
+
+/* About */
+.about { background: var(--primary-soft); }
+.about-grid {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 50px;
+  align-items: center;
+}
+.doctor-card {
+  background: var(--bg-elevated);
+  border-radius: 28px;
+  padding: 20px;
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
+  text-align: center;
+}
+.doctor-card img {
+  width: 100%;
+  height: 340px;
+  object-fit: cover;
+  object-position: top center;
+  border-radius: 20px;
+  margin-bottom: 18px;
+}
+.doctor-card h3 {
+  font-size: 22px;
+  margin-bottom: 4px;
+}
+.doctor-card .title {
+  color: var(--primary);
+  font-weight: 600;
+  font-size: 14px;
+  margin-bottom: 6px;
+}
+.doctor-card .qual {
+  color: var(--text-muted);
+  font-size: 13px;
+}
+.features {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-top: 28px;
+}
+.feature {
+  background: var(--bg-elevated);
+  padding: 14px 16px;
+  border-radius: 14px;
+  border: 1px solid var(--border);
+  font-size: 14px;
+  font-weight: 500;
+}
+.feature b { color: var(--primary); }
+
+/* Treatments visual */
+.treatments-visual {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-top: 40px;
+}
+.treat-card {
+  border-radius: var(--radius);
+  overflow: hidden;
+  border: 1px solid var(--border);
+  background: var(--bg-elevated);
+  box-shadow: var(--shadow);
+}
+.treat-card img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+}
+.treat-card .caption {
+  padding: 16px 20px;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text);
+}
+
+/* Gallery */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+.gallery-item {
+  border-radius: 18px;
+  overflow: hidden;
+  height: 240px;
+  border: 1px solid var(--border);
+}
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s;
+}
+.gallery-item:hover img { transform: scale(1.05); }
+
+/* Reviews */
+.reviews {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+.review {
+  background: var(--bg-elevated);
+  padding: 26px;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+}
+.review .stars { font-size: 15px; margin-bottom: 12px; }
+.review p {
+  color: var(--text-muted);
+  font-size: 14px;
+  margin-bottom: 14px;
+  line-height: 1.6;
+}
+.review b { font-size: 13px; color: var(--text); }
+
+/* CTA */
+.cta-box {
+  background: linear-gradient(135deg, #0d7c82, #0a5c61);
+  color: #fff;
+  border-radius: 28px;
+  padding: 50px 40px;
+  text-align: center;
+  box-shadow: var(--shadow);
+}
+.cta-box h2 { font-size: 30px; margin-bottom: 10px; }
+.cta-box p { opacity: 0.9; margin-bottom: 24px; max-width: 480px; margin-left: auto; margin-right: auto; }
+.cta-box .btn {
+  background: #fff;
+  color: #0d7c82;
+  font-weight: 800;
+}
+.cta-box .btn:hover { transform: translateY(-2px); }
+
+/* Contact */
+.contact {
+  display: grid;
+  grid-template-columns: 1fr 1.1fr;
+  gap: 24px;
+}
+.contact-card {
+  background: var(--bg-elevated);
+  padding: 28px;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+}
+.contact-row {
+  padding: 14px 0;
+  border-bottom: 1px solid var(--border);
+}
+.contact-row:last-of-type { border: 0; }
+.contact-row small {
+  display: block;
+  color: var(--text-muted);
+  font-size: 12px;
+  margin-bottom: 3px;
+}
+.contact-row b { font-size: 15px; font-weight: 600; }
+.map {
+  width: 100%;
+  height: 100%;
+  min-height: 340px;
+  border: 0;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+}
+
+/* FAQ */
+.faq { max-width: 780px; margin: 0 auto; }
+.faq details {
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 18px 22px;
+  margin: 10px 0;
+  transition: border 0.2s;
+}
+.faq details[open] { border-color: var(--primary); }
+.faq summary {
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 15px;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.faq summary::-webkit-details-marker { display: none; }
+.faq summary::after {
+  content: '+';
+  font-size: 20px;
+  color: var(--primary);
+  font-weight: 400;
+}
+.faq details[open] summary::after { content: '−'; }
+.faq details p {
+  margin-top: 12px;
+  color: var(--text-muted);
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* Footer */
+footer {
+  background: #0a1c24;
+  color: #a8bec8;
+  padding: 36px 0;
+  text-align: center;
+  font-size: 13px;
+}
+footer .logo-foot {
+  color: #2ec4c9;
+  font-weight: 800;
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+/* Floating WhatsApp */
+.float {
+  position: fixed;
+  right: 22px;
+  bottom: 22px;
+  background: #25D366;
+  color: #fff;
+  border-radius: 50px;
+  padding: 14px 20px;
+  font-weight: 700;
+  font-size: 15px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.25);
+  z-index: 90;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: transform 0.2s;
+}
+.float:hover { transform: scale(1.05); }
+
+/* Mobile */
+@media (max-width: 860px) {
+  nav { display: none; }
+  .hero { padding: 40px 0 50px; }
+  .hero-grid, .about-grid, .contact, .treatments-visual {
+    grid-template-columns: 1fr;
+  }
+  .services, .reviews, .gallery {
+    grid-template-columns: 1fr;
+  }
+  .hero-photo { height: 320px; }
+  .doctor-card img { height: 300px; }
+  .stats { grid-template-columns: repeat(3, 1fr); }
+  section { padding: 60px 0; }
+  .features { grid-template-columns: 1fr; }
+  .cta-box { padding: 36px 24px; }
+}
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MedicalClinic",
+  "name": "TruDerm by Dr. Nidhi Rana",
+  "description": "Dermatology, Cosmetology & Laser Clinic in Bhopal",
+  "telephone": "+91-9896254925",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "E-Block, First Floor, Surendra Landmark, Hoshangabad Road, Near Ashima Mall",
+    "addressLocality": "Bhopal",
+    "addressRegion": "Madhya Pradesh",
+    "postalCode": "462026",
+    "addressCountry": "IN"
+  },
+  "medicalSpecialty": ["Dermatology", "Cosmetology"],
+  "openingHours": "Mo-Fr 18:00-20:30"
+}
+</script>
+</head>
+<body>
+<header>
+  <div class="container nav">
+    <a class="logo" href="#">
+      <div>
+        TruDerm
+        <span>DR. NIDHI RANA · BHOPAL</span>
+      </div>
+    </a>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#services">Treatments</a>
+      <a href="#gallery">Clinic</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="nav-actions">
+      <button class="theme-btn" id="themeToggle" aria-label="Toggle dark mode" title="Toggle theme">🌙</button>
+      <a class="btn btn-primary" href="tel:+919896254925">Book Appointment</a>
+    </div>
+  </div>
+</header>
+
+<main>
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <div>
+        <span class="badge">Dermatology · Cosmetology · Laser</span>
+        <h1>Healthy, confident skin starts here.</h1>
+        <p>TruDerm by Dr. Nidhi Rana (MBBS, MD DVL) offers expert care for acne, pigmentation, laser treatments, chemical peels and more — with a personalised, patient-first approach in Bhopal.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="tel:+919896254925">📞 Call Clinic</a>
+          <a class="btn btn-outline" href="https://wa.me/919896254925?text=Hello%20TruDerm%20/%20Dr.%20Nidhi%20Rana,%20I%20would%20like%20to%20book%20an%20appointment." target="_blank" rel="noopener">💬 WhatsApp</a>
+        </div>
+        <div class="rating">
+          <span class="stars">★★★★★</span>
+          <b>4.9</b> · 930+ Google reviews
+        </div>
+      </div>
+      <div class="hero-card">
+        <div class="hero-photo">
+          <img src="images/imgdownloader-bd17bca1.png" alt="Dr. Nidhi Rana - Consultant Dermatologist at TruDerm Clinic Bhopal" loading="eager">
+        </div>
+        <div class="stats">
+          <div class="stat"><b>4.9★</b><span>Google Rating</span></div>
+          <div class="stat"><b>930+</b><span>Reviews</span></div>
+          <div class="stat"><b>MD (DVL)</b><span>Dermatologist</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="services">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Our Treatments</span>
+        <h2>Skin & hair solutions tailored for you</h2>
+        <p>Evidence-based dermatology and advanced aesthetic treatments under the care of an experienced specialist.</p>
+      </div>
+      <div class="services">
+        <div class="service">
+          <div class="icon">✨</div>
+          <h3>Acne & Acne Scars</h3>
+          <p>Comprehensive evaluation and treatment for active acne, post-acne marks and scars.</p>
+        </div>
+        <div class="service">
+          <div class="icon">🌿</div>
+          <h3>Pigmentation & Melasma</h3>
+          <p>Targeted solutions for freckles, melasma, blemishes and uneven skin tone.</p>
+        </div>
+        <div class="service">
+          <div class="icon">💇</div>
+          <h3>Hair Fall & Scalp Care</h3>
+          <p>Diagnosis and medical management of hair fall and common scalp conditions.</p>
+        </div>
+        <div class="service">
+          <div class="icon">💎</div>
+          <h3>Laser Treatments</h3>
+          <p>Laser hair reduction, tattoo removal, skin rejuvenation and birthmark treatment.</p>
+        </div>
+        <div class="service">
+          <div class="icon">🧴</div>
+          <h3>Chemical Peel</h3>
+          <p>Peels to treat acne, open pores, pigmentation, fine lines and dull skin.</p>
+        </div>
+        <div class="service">
+          <div class="icon">🌸</div>
+          <h3>Skin Rejuvenation</h3>
+          <p>Anti-ageing and glow treatments for smoother, brighter and healthier skin.</p>
+        </div>
+      </div>
+
+      <!-- Visual treatment cards -->
+      <div class="treatments-visual">
+        <div class="treat-card">
+          <img src="images/imgdownloader-f27dd8ba.jpeg" alt="Chemical Peel benefits at TruDerm Bhopal">
+          <div class="caption">Chemical Peel — Acne, pores, pigmentation & fine lines</div>
+        </div>
+        <div class="treat-card">
+          <img src="images/imgdownloader-cbc4d4ac.jpeg" alt="Laser treatments at TruDerm Clinic">
+          <div class="caption">Laser Treatments — Hair reduction, scars, melasma & more</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="about">
+    <div class="container about-grid">
+      <div class="doctor-card">
+        <img src="images/imgdownloader-26155de5.jpeg" alt="Dr. Nidhi Rana at TruDerm Clinic">
+        <h3>Dr. Nidhi Rana</h3>
+        <div class="title">MBBS, MD (DVL)</div>
+        <div class="qual">Consultant Dermatologist · Cosmetologist & Laser Surgeon</div>
+        <div class="rating" style="justify-content:center;margin-top:14px">
+          <span class="stars">★★★★★</span>
+          <b style="color:var(--text)">4.9/5</b>
+        </div>
+      </div>
+      <div>
+        <span class="eyebrow">About the Clinic</span>
+        <h2 style="font-size:clamp(26px,3.2vw,36px);margin:10px 0 14px;font-weight:800">Personalised dermatology care you can trust</h2>
+        <p style="color:var(--text-muted);margin-bottom:8px">
+          TruDerm is the skin clinic of Dr. Nidhi Rana, a qualified dermatologist (MBBS, MD DVL) specialising in medical dermatology, cosmetology and laser procedures. The clinic focuses on accurate diagnosis and individualised treatment plans.
+        </p>
+        <p style="color:var(--text-muted)">
+          Located at Surendra Landmark on Hoshangabad Road (near Ashima Mall), Bhopal. Registration: DMC/R/10312.
+        </p>
+        <div class="features">
+          <div class="feature">✓ <b>MD (DVL)</b> Dermatologist</div>
+          <div class="feature">✓ <b>Laser</b> & Aesthetic care</div>
+          <div class="feature">✓ <b>Patient-first</b> approach</div>
+          <div class="feature">✓ <b>Evening</b> appointments</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery / Clinic -->
+  <section id="gallery">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Our Space</span>
+        <h2>A calm, modern clinic environment</h2>
+        <p>Clean, professional setting designed for comfortable consultations and treatments.</p>
+      </div>
+      <div class="gallery">
+        <div class="gallery-item">
+          <img src="images/imgdownloader-a4c28d33.jpeg" alt="TruDerm reception area" loading="lazy">
+        </div>
+        <div class="gallery-item">
+          <img src="images/imgdownloader-c1b477d6.jpeg" alt="Laser treatment in progress at TruDerm" loading="lazy">
+        </div>
+        <div class="gallery-item">
+          <img src="images/imgdownloader-bd17bca1.png" alt="Dr. Nidhi Rana consultation desk" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reviews -->
+  <section id="reviews">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Patient Feedback</span>
+        <h2>What patients say</h2>
+        <p>Highlights from Google reviews for the clinic.</p>
+      </div>
+      <div class="reviews">
+        <div class="review">
+          <div class="stars">★★★★★</div>
+          <p>“Very good analysis, diagnosis, treatment. Good staff behaviour.”</p>
+          <b>Google Reviewer</b>
+        </div>
+        <div class="review">
+          <div class="stars">★★★★★</div>
+          <p>“Very good doctor, soft spoken… prompt diagnosis.”</p>
+          <b>Google Reviewer</b>
+        </div>
+        <div class="review">
+          <div class="stars">★★★★★</div>
+          <p>“She is so clear, friendly and very good results. My friend recommended her.”</p>
+          <b>Abhishek Parmar · Google</b>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section>
+    <div class="container">
+      <div class="cta-box">
+        <h2>Ready for healthier skin?</h2>
+        <p>Book a consultation with Dr. Nidhi Rana. Evening slots available Monday to Friday.</p>
+        <a class="btn" href="tel:+919896254925">📞 098962 54925</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Visit Us</span>
+        <h2>Find the clinic</h2>
+      </div>
+      <div class="contact">
+        <div class="contact-card">
+          <div class="contact-row">
+            <small>Clinic</small>
+            <b>TruDerm by Dr. Nidhi Rana</b>
+          </div>
+          <div class="contact-row">
+            <small>Address</small>
+            <b>E-Block, First Floor, Surendra Landmark,<br>Hoshangabad Road, Near Ashima Mall,<br>Bhopal, Madhya Pradesh 462026</b>
+          </div>
+          <div class="contact-row">
+            <small>Phone</small>
+            <b><a href="tel:+919896254925">+91 9896 254 925</a></b>
+          </div>
+          <div class="contact-row">
+            <small>Timings</small>
+            <b>Monday – Friday · 6:00 PM – 8:30 PM</b>
+          </div>
+          <div class="contact-row">
+            <small>Registration</small>
+            <b>DMC/R/10312</b>
+          </div>
+          <a class="btn btn-primary" style="margin-top:18px;width:100%" href="https://www.google.com/maps/search/?api=1&query=TruDerm+Dr+Nidhi+Rana+Surendra+Landmark+Bhopal" target="_blank" rel="noopener">📍 Get Directions</a>
+        </div>
+        <iframe class="map" src="https://www.google.com/maps?q=Surendra+Landmark+Hoshangabad+Road+Bhopal&output=embed" loading="lazy" title="TruDerm Clinic Bhopal location" allowfullscreen></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section>
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">FAQ</span>
+        <h2>Frequently asked questions</h2>
+      </div>
+      <div class="faq">
+        <details>
+          <summary>What does Dr. Nidhi Rana treat?</summary>
+          <p>As a dermatologist (MD DVL), she manages conditions of the skin, hair and nails, and also offers cosmetology and laser procedures such as chemical peels, laser hair reduction, pigmentation treatment and acne scar management.</p>
+        </details>
+        <details>
+          <summary>How can I book an appointment?</summary>
+          <p>Call or WhatsApp on +91 9896 254 925. Clinic timings are Monday to Friday, 6:00 PM to 8:30 PM.</p>
+        </details>
+        <details>
+          <summary>Where is TruDerm located?</summary>
+          <p>E-Block, First Floor, Surendra Landmark, Hoshangabad Road, Near Ashima Mall, Bhopal.</p>
+        </details>
+        <details>
+          <summary>Are results guaranteed for every patient?</summary>
+          <p>Results vary depending on the condition, skin type and adherence to the treatment plan. A proper consultation is the first step to set realistic expectations.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+</main>
+
+<a class="float" href="https://wa.me/919896254925?text=Hello%20TruDerm%20/%20Dr.%20Nidhi%20Rana,%20I%20would%20like%20to%20book%20an%20appointment." target="_blank" rel="noopener">
+  💬 WhatsApp
+</a>
+
+<footer>
+  <div class="container">
+    <div class="logo-foot">TruDerm · Dr. Nidhi Rana</div>
+    <p>© 2026 TruDerm Skin Clinic, Bhopal · All rights reserved.</p>
+    <p style="margin-top:6px;opacity:0.7">MBBS, MD (DVL) · Consultant Dermatologist, Cosmetologist & Laser Surgeon · Reg. DMC/R/10312</p>
+  </div>
+</footer>
+
+<script>
+  // Theme toggle
+  const toggle = document.getElementById('themeToggle');
+  const root = document.documentElement;
+
+  // Prefer saved theme or system preference
+  const saved = localStorage.getItem('theme');
+  const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+  if (saved === 'dark' || (!saved && prefersDark)) {
+    root.setAttribute('data-theme', 'dark');
+    toggle.textContent = '☀️';
+  }
+
+  toggle.addEventListener('click', () => {
+    const isDark = root.getAttribute('data-theme') === 'dark';
+    if (isDark) {
+      root.removeAttribute('data-theme');
+      localStorage.setItem('theme', 'light');
+      toggle.textContent = '🌙';
+    } else {
+      root.setAttribute('data-theme', 'dark');
+      localStorage.setItem('theme', 'dark');
+      toggle.textContent = '☀️';
+    }
+  });
+</script>
+</body>
+</html>
